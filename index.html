@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master the board with ChessPulse. Play online chess, solve daily tactical puzzles, and analyze your games.">
+    <title>ChessPulse | Master the Board</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">♞</span>
+            <span class="logo-text">ChessPulse</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <button class="btn btn-secondary" id="loginBtn">Log In</button>
+            <button class="btn btn-primary" id="playBtnNav">Play Now</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="badge">✨ Next-Gen Chess Platform</span>
+                <h1>Master Every Move.<br><span class="highlight">Outsmart Your Opponent.</span></h1>
+                <p>Play live chess with opponents worldwide, solve daily tactics, and improve your rating with intelligent analytics.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large" id="playBtnHero">Play Online Now</button>
+                    <button class="btn btn-outline btn-large" id="puzzleBtnHero">Solve Today's Puzzle</button>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-num">10M+</span>
+                        <span class="stat-label">Games Played</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">500K+</span>
+                        <span class="stat-label">Active Players</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">99.9%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="board-card">
+                    <div class="board-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="match-title">Match of the Day</span>
+                    </div>
+                    <div class="mini-board" id="miniBoard">
+                        <!-- Board cells generated dynamically in JS or lightweight HTML grid -->
+                        <div class="square dark">♜</div>
+                        <div class="square light">♞</div>
+                        <div class="square dark">♝</div>
+                        <div class="square light">♛</div>
+                        <div class="square dark">♚</div>
+                        <div class="square light">♝</div>
+                        <div class="square dark">♞</div>
+                        <div class="square light">♜</div>
+                        
+                        <div class="square light">♟</div>
+                        <div class="square dark">♟</div>
+                        <div class="square light">♟</div>
+                        <div class="square dark">♟</div>
+                        <div class="square light">♟</div>
+                        <div class="square dark">♟</div>
+                        <div class="square light">♟</div>
+                        <div class="square dark">♟</div>
+                    </div>
+                    <div class="board-footer">
+                        <span class="turn-indicator">White to move in <strong>3</strong>...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <h2>Why Choose <span class="highlight">ChessPulse</span>?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Matchmaking</h3>
+                    <p>Connect with players of equal skill level instantly in Bullet, Blitz, or Rapid modes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧩</div>
+                    <h3>Interactive Puzzles</h3>
+                    <p>Sharpen your tactical vision with thousands of curated puzzles adapted to your rating.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Deep Game Analysis</h3>
+                    <p>Review key blunders and winning moves with stockfish engine post-match evaluation.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 ChessPulse. Built for grandmasters & beginners alike.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
